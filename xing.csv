@@ -553,7 +553,7 @@ zi,key
 仟,rq
 仛,rp
 仡,rv
-仢,rb
+仢,ru
 仫,rp
 伋,rn
 们,rm
@@ -831,12 +831,12 @@ zi,key
 圳,tv
 老,lb
 老,tp
-圴,tb
+圴,tu
 圾,tn
 巩,gj
-扚,ob
-扚,ub
-扚,zb
+扚,ou
+扚,uu
+扚,zu
 执,ow
 执,uw
 执,zw
@@ -910,9 +910,9 @@ zi,key
 芄,zw
 芄,qw
 芄,cw
-芍,zb
-芍,qb
-芍,cb
+芍,zu
+芍,qu
+芍,cu
 芕,cx
 芕,qx
 芕,zx
@@ -994,7 +994,7 @@ zi,key
 灰,ap
 戍,wd
 匢,kh
-尥,ub
+尥,uu
 列,dd
 死,ax
 死,db
@@ -1182,7 +1182,7 @@ zi,key
 后,va
 劤,jl
 行,ra
-彴,rb
+彴,ru
 彶,rn
 彵,ry
 甪,dy
@@ -1229,7 +1229,7 @@ zi,key
 犵,qv
 刎,hd
 犱,qw
-犳,qb
+犳,qu
 犷,qg
 匈,bx
 犸,qm
@@ -1321,8 +1321,8 @@ zi,key
 汔,uv
 汌,uv
 汌,dv
-汋,db
-汋,ub
+汋,du
+汋,uu
 汍,dw
 汍,uw
 汎,dj
@@ -1468,7 +1468,7 @@ zi,key
 奷,nq
 奼,np
 奺,nj
-妁,nb
+妁,nu
 妇,nj
 妃,nf
 好,nl
@@ -1495,7 +1495,7 @@ zi,key
 纤,sq
 纥,sv
 驯,mv
-约,sb
+约,su
 级,sn
 纨,sw
 纩,sg
@@ -1518,8 +1518,8 @@ zi,key
 玙,yy
 玔,wv
 玔,yv
-玓,yb
-玓,wb
+玓,yu
+玓,wu
 玖,yj
 玖,wj
 麦,fn
@@ -1959,7 +1959,7 @@ zi,key
 杉,mp
 巫,gr
 杋,mj
-杓,mb
+杓,mu
 极,mn
 杧,mw
 杛,mg
@@ -2087,7 +2087,7 @@ zi,key
 园,ky
 呖,kv
 吰,kg
-旳,rb
+旳,ru
 昅,rn
 呃,ke
 旷,rg
@@ -2324,7 +2324,7 @@ zi,key
 釆,pm
 坐,rr
 谷,br
-尦,lb
+尦,lu
 寽,zc
 寽,vc
 孚,vl
@@ -2353,8 +2353,8 @@ zi,key
 肐,yv
 肜,yp
 肜,rp
-肑,rb
-肑,yb
+肑,ru
+肑,yu
 肒,rw
 肒,yw
 肞,rd
@@ -2494,7 +2494,7 @@ zi,key
 灷,hg
 灿,hu
 灹,hp
-灼,hb
+灼,hu
 灺,hy
 炀,hg
 弟,bd
@@ -2687,8 +2687,8 @@ zi,key
 初,yd
 社,ut
 社,it
-礿,ub
-礿,ib
+礿,uu
+礿,iu
 祀,uy
 祀,iy
 祂,uy
@@ -3763,7 +3763,7 @@ zi,key
 哎,kz
 咕,kk
 呠,kb
-畃,ub
+畃,uu
 迧,zu
 迧,zt
 迧,vu
@@ -3980,7 +3980,7 @@ zi,key
 钐,jp
 钑,jn
 钒,jj
-钓,jb
+钓,ju
 钔,jm
 钕,jn
 钖,jg
@@ -4148,7 +4148,7 @@ zi,key
 郋,zk
 帛,bj
 卑,dt
-的,bb
+的,bu
 迫,zb
 迫,vb
 佷,rg
@@ -4184,7 +4184,7 @@ zi,key
 郍,ie
 郍,ik
 舠,id
-瓝,gb
+瓝,gu
 佱,ra
 舍,ro
 金,rw
@@ -6196,7 +6196,7 @@ zi,key
 眂,mj
 昜,ra
 昽,rl
-盷,mb
+盷,mu
 盿,mw
 眆,mf
 眈,my
@@ -6297,7 +6297,7 @@ zi,key
 虽,kv
 虴,vp
 虼,vv
-虳,vb
+虳,vu
 虻,vw
 蚁,vd
 虸,vl
@@ -8664,7 +8664,7 @@ zi,key
 酐,yg
 酑,yw
 酎,yc
-酌,yb
+酌,yu
 逎,vy
 逎,vi
 逎,zy
@@ -8922,7 +8922,7 @@ zi,key
 哶,kz
 趶,zw
 趷,zv
-趵,zb
+趵,zu
 趿,zn
 畕,tt
 畘,tk
@@ -9454,7 +9454,7 @@ zi,key
 爱,vb
 豻,cg
 豺,cz
-豹,cb
+豹,cu
 奚,zk
 奚,vk
 鬯,ky
@@ -9826,7 +9826,7 @@ zi,key
 烘,hg
 烡,hh
 烡,hg
-烵,hb
+烵,hu
 烞,hm
 烜,hg
 烜,hx
@@ -14181,7 +14181,7 @@ zi,key
 靬,gg
 靯,gt
 靰,gw
-靮,gb
+靮,gu
 靸,gn
 靭,gr
 靱,gd
