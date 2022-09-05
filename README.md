@@ -36,6 +36,18 @@
 | 3    | 前两字首码 + 末字前两码 + 末字读音 | 输入法   | URFAH                            |
 | 4+   | （辅音+读音）* N个字               | 一个顶俩 | YFGJDHLH                         |
 
+# 关于词典
+柠檬水平有限，从网上随便爬了点词做的默认词典，如果嫌不够可以自制
+
+自制词典只需要一个只有字和`\n`的文件，然后使用
+
+```sh
+python ./dict_gen/dict_gen.py 开始行数 结束行数
+```
+或者你可以使用 [深蓝词库转换](https://github.com/studyzy/imewlconverter) 下载一些其他输入法的词库，转换为 rime 格式然后再使用regex `\t.*$` 剔除掉他们的拼音并保存成上述格式然后跑上方的脚本~
+
+脚本会导出`*.dict.csv`和`*.failed.csv`, 记得查看`failed.csv`如果有关键常用字形缺失请联系我哦~
+
 # License
 - chaizi_dict: [署名3.0](http://creativecommons.org/licenses/by/3.0/deed.zh_TW) [项目地址](https://github.com/kfcd/chaizi)
 - THUOCL: [license](./dev/LICENSE)
