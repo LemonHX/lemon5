@@ -1,1 +1,3 @@
 generated_dict/
+*.pyc
+*.pyo
