@@ -1,9 +1,15 @@
-import sys
-import pandas as pd
-import opencc
-from pypinyin import Style, pinyin
-from pypinyin.contrib.tone_convert import to_initials, to_finals
 import asyncio
+from pypinyin.contrib.tone_convert import to_initials, to_finals
+from pypinyin import Style, pinyin
+import opencc
+import pandas as pd
+import os
+import sys
+import inspect
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(
+    os.path.abspath(inspect.getfile(inspect.currentframe())))))
+
 
 converter = opencc.OpenCC('t2s.json')
 wuma = pd.read_csv('wuma.csv')
@@ -12,75 +18,8 @@ failed = []
 ciku = []
 
 
-def pinyin_trans(pinyin):
-    if pinyin == "iao":
-        return "q"
-    if pinyin == "en":
-        return "w"
-    if pinyin == "eng" or pinyin == "uan":
-        return "r"
-    if pinyin == "ue" or pinyin == "ve":
-        return "t"
-    if pinyin == "un":
-        return "y"
-    if pinyin == "uo":
-        return "u"
-    if pinyin == "ou":
-        return "o"
-    if pinyin == "ie":
-        return "p"
-    if pinyin == "uang":
-        return "s"
-    if pinyin == "ai":
-        return "d"
-    if pinyin == "an":
-        return "f"
-    if pinyin == "ang":
-        return "g"
-    if pinyin == "ao":
-        return "h"
-    if pinyin == "ian":
-        return "j"
-    if pinyin == "ing" or pinyin == "uai":
-        return "k"
-    if pinyin == "in":
-        return "l"
-    if pinyin == "ei":
-        return "z"
-    if pinyin == "ia":
-        return "x"
-    if pinyin == "ua":
-        return "c"
-    if pinyin == "ui":
-        return "v"
-    if pinyin == "iu":
-        return "b"
-    if pinyin == "ong" or pinyin == "iong":
-        return "n"
-    if pinyin == "iang":
-        return "m"
-    if pinyin == "zh":
-        return "i"
-    if pinyin == "ch":
-        return "v"
-    if pinyin == "sh":
-        return "u"
-    return pinyin
-
-
-def tone_trans(tone):
-    if tone == "1":
-        return "f"
-    if tone == "2":
-        return "g"
-    if tone == "3":
-        return "h"
-    if tone == "4":
-        return "j"
-    return "b"
-
-
 def guize(ci):
+    from transport import pinyin_trans, tone_trans
     py = pinyin(ci, style=Style.TONE3)
     yin = []
     for y in py:
