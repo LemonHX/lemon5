@@ -1,0 +1,40 @@
+{
+  "pinyin": {
+    "iao": "q",
+    "en": "w",
+    "eng": "t",
+    "uan": "r",
+    "ue": "t",
+    "ve": "t",
+    "un": "y",
+    "uo": "u",
+    "ou": "o",
+    "ie": "p",
+    "uang": "s",
+    "ai": "d",
+    "an": "f",
+    "ang": "g",
+    "ao": "h",
+    "ian": "j",
+    "ing": "k",
+    "uai": "k",
+    "in": "l",
+    "ei": "z",
+    "ia": "x",
+    "ua": "c",
+    "ui": "v",
+    "iu": "b",
+    "ong": "n",
+    "iong": "n",
+    "iang": "m",
+    "zh": "i",
+    "ch": "v",
+    "sh": "u"
+  },
+  "tone": {
+    "1": "f",
+    "2": "g",
+    "3": "h",
+    "4": "j"
+  }
+}
