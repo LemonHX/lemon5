@@ -68,13 +68,19 @@ def guize(ci):
     if len(ci) >= 4:
         buffer = ""
         not_append = False
-        for c in range(0, len(ci)):
+        for c in range(0, 2):
             z = wuma[wuma['zi'] == ci[c]]["wuma"].values
             if len(z) > 0:
-                buffer += yin[c][0]+yin[c][2]
+                buffer += yin[c][0]
             else:
                 failed.append(ci[c])
                 not_append = True
+        z = wuma[wuma['zi'] == ci[-1]]["wuma"].values
+        if len(z) > 0:
+            buffer += yin[-1][0]+yin[-1][1]+yin[-1][2]
+        else:
+            failed.append(ci[-1])
+            not_append = True
         if buffer != "" and not not_append:
             ciku.append([ci, buffer])
 
@@ -97,7 +103,11 @@ def calc(name, s):
         i += 1
         line = line.strip()
         line = converter.convert(line)
-        guize(line)
+        try:
+            guize(line)
+        except:
+            print(line)
+            failed.append(line)
 
 
 def ssplit(a, n):

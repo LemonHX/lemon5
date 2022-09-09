@@ -2,3 +2,11 @@ generated_dict/
 *.pyc
 *.pyo
 tmp.*
+__pycache__/
+
+all_xiaozi.csv
+fancha.csv
+wuma.csv
+wuma_not_covered.csv
+wuma_chongma.csv
+wenshu.sqlite

@@ -9,9 +9,9 @@
 
 | 单字 | 双拼       | 音调  | 双形        | 全码   |
 | ---- | ---------- | ----- | ----------- | ------ |
-| 柠   | NK（ning） | G (á) | MB （木宀） | NKG[MB |
+| 柠   | NK（ning） | G (á) | MN （木宁） | NKG[MN |
 | 檬   | MR（meng） | G (á) | MM （木蒙） | MRG[MM |
-| 五   | WU（wu）   | H (ǎ) | AA （一一） | WUH[AA |
+| 五   | WU（wu）   | H (ǎ) | AW （一𫝀） | WUH[AW |
 | 码   | MA（ma）   | H (ǎ) | UM （石马） | MAH[UM |
 
 # 使用规则
@@ -24,17 +24,18 @@
 `` ` ``（grave）键位通配键盘，可以充当声母韵母音调或者是双形中的任意字符。
 理论上`` ` `` `` ` `` `` ` `` `` ` `` `` ` `` 能表示任意字符
 
+## 简码
+简码有两个，[一简](jianma.danzi.csv)和[二简](jianma.erzi.csv)，包含了汉语中最常用的字。
 
 ## 盲打模式
 好啦，我知道你们喜欢盲打，那么盲打模式就是这样的
 
 | 字数 | 规则                               | 例词     | 全码                             |
 | ---- | ---------------------------------- | -------- | -------------------------------- |
-| 1    | 全码无形                           | 啊       | AAF （只有一个韵母的词重复两次） |
 | 1    | 全码                               | 哦       | OOJ[KW                            |
-| 2    | 首字前两码 + 末字前两码 + 末字读音 | 柠檬     | NKMRG                            |
+| 2    | 首字前两码 + 末字前两码 + 末字读音 | 柠檬     | NKMRN                            |
 | 3    | 前两字首码 + 末字前两码 + 末字读音 | 输入法   | URFAH                            |
-| 4+   | （辅音+读音）* N个字               | 一个顶俩 | YFGJDHLH                         |
+| 4+   | 前两字首码 + 末字读音               | 一个顶俩 | YGLXH                         |
 
 # 关于词典
 柠檬水平有限，从网上随便爬了点词做的默认词典，如果嫌不够可以自制
@@ -48,6 +49,14 @@ python ./dict_gen/dict_gen.py 开始行数 结束行数
 
 脚本会导出`*.dict.csv`和`*.failed.csv`, 记得查看`failed.csv`如果有关键常用字形缺失请联系我哦~
 
+# 构建
+1. 下载[文书DB](https://github.com/LemonHX/wenshudb/releases/)最新版sqlite文件
+2. python 安装依赖
+3. python ./bootstrap/start.py
+4. python ./wuma.py
+5. python ./test_coverage.py
+6. 生成你的字典
+
 # License
-- chaizi_dict: [署名3.0](http://creativecommons.org/licenses/by/3.0/deed.zh_TW) [项目地址](https://github.com/kfcd/chaizi)
 - THUOCL: [license](./dev/LICENSE)
+- 文书DB: [license](https://github.com/lemonhx/wenshudb)

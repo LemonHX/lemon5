@@ -2,7 +2,7 @@
   "pinyin": {
     "iao": "q",
     "en": "w",
-    "eng": "t",
+    "eng": "r",
     "uan": "r",
     "ue": "t",
     "ve": "t",
@@ -24,17 +24,24 @@
     "ua": "c",
     "ui": "v",
     "iu": "b",
+    "iou": "b",
     "ong": "n",
     "iong": "n",
     "iang": "m",
     "zh": "i",
     "ch": "v",
-    "sh": "u"
+    "sh": "u",
+    "van": "r",
+    "uei": "v",
+    "vn": "y",
+    "uen": "y",
+    "ueng": "t"
   },
   "tone": {
     "1": "f",
     "2": "g",
     "3": "h",
-    "4": "j"
+    "4": "j",
+    "5": "b"
   }
 }

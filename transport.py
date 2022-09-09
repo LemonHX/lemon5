@@ -4,8 +4,10 @@ trans = json.load(open("transport.json", "r"))
 def pinyin_trans(pinyin):
     if pinyin in trans["pinyin"].keys():
         return trans["pinyin"][pinyin]
-    else:
+    elif len(pinyin) == 1:
         return pinyin
+    else:
+        raise ValueError(pinyin + "not in json")
 
 
 def tone_trans(tone):
