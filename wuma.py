@@ -50,7 +50,14 @@ def gen_wuma(row):
 df01.apply(gen_wuma,axis=1)
 wuma = pd.DataFrame(wuma,columns=["zi","wuma"])
 wuma.drop_duplicates(inplace=True)
-wuma.to_csv("wuma.csv",index=False)
+data = tuple(wuma.itertuples(index=True))
+wildcards = ','.join(['?'] * len(data[0]))
+insert_sql = 'INSERT INTO WUMA VALUES(%s)' % wildcards
+con.executemany(insert_sql, data)
+con.commit()
+wuma = pd.read_sql_query(open("query_wuma.sql").read(), con)
+wuma.rename(columns={"ZI":"zi","WUMA":"wuma"},inplace=True)
+wuma.to_csv("wuma.csv", index=False)
 
 fancha = []
 def int_to_bool_list(num):
