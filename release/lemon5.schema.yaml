@@ -63,6 +63,9 @@ speller:
     - derive/wv/wz # ui
     - derive/wy/ww # uen
     - derive/wt/wr # ueng
+    # u v 通用
+    - derive/v/u
+    - derive/u/v
 
 translator:
   dictionary: lemon5_dict
