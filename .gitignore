@@ -11,3 +11,4 @@ wuma_not_covered.csv
 wuma_chongma.csv
 wenshu.sqlite
 *.dict.yaml
+*.zip

@@ -1,0 +1,95 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: lemon5
+  name: 柠檬五码
+  version: "v0.2"
+  description: |
+    柠檬五码是柠檬自己设计开发的五码定长的输入法
+    网址: https://www.github.com/lemonhx/lemon5
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, English ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - affix_segmentor@luna
+    - fallback_segmentor
+  translators:
+    - script_translator
+    - script_translator@luna
+    - table_translator
+    - reverse_lookup_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: '/[zyxwvutsrqponmlkjihgfedcba`'
+  initials: '`abcdefghijklmnopqrstuvwxyz;'
+  finals: '/'
+  max_code_length: 5
+  auto_select: true
+  auto_clear: max_length
+  algebra:
+    #  全码字不加`[`键
+    - xform/[[]//
+    # y 后 ixx 转寫
+    - derive/yq/yh # iao
+    - derive/yp/ye # ie
+    - derive/yj/yf # ian
+    - derive/yb/yu # iu
+    - derive/yb/yo # iou
+    - derive/ym/yg # iang
+    # w 后 uxx 转写
+    - derive/wx/wf # uan
+    - derive/wu/wo # uo
+    - derive/ws/wg # uang
+    - derive/wk/wd # uai
+    - derive/wc/wa # ua
+    - derive/wv/wz # ui
+    - derive/wy/ww # uen
+    - derive/wt/wr # ueng
+
+translator:
+  dictionary: lemon5_dict
+  enable_charset_filter: false
+  enable_sentence: false
+  enable_completion: true
+  enable_user_dict: false
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "[a-z`]*`+[a-z`]*"
+    luna: "^ax[a-z]*'?$"
+
+reverse_lookup:
+  dictionary: lemon5_reverse
+
+luna:
+  tag: luna
+  dictionary: luna_pinyin
+  prism: luna_pinyin
+  enable_completion: true
+  prefix: "ax"
+  suffix: "'"
+  tips: "朙月拼音"
