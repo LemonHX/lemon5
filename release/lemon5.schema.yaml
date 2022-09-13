@@ -46,7 +46,7 @@ speller:
   auto_clear: max_length
   algebra:
     #  全码字不加`[`键
-    - xform/[[]//
+    # - xform/[[]//
     # y 后 ixx 转寫
     - derive/yq/yh # iao
     - derive/yp/ye # ie
@@ -62,10 +62,10 @@ speller:
     - derive/wc/wa # ua
     - derive/wv/wz # ui
     - derive/wy/ww # uen
-    - derive/wt/wr # ueng
+    - derive/wn/wr # ueng
     # u v 通用
     - derive/v/u
-    - derive/u/v
+
 
 translator:
   dictionary: lemon5_dict
