@@ -65,6 +65,7 @@ speller:
     - derive/wn/wr # ueng
     # u v 通用
     - derive/v/u
+    - derive/u/v
 
 
 translator:
